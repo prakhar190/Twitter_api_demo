@@ -17,13 +17,13 @@ Things you may want to cover:
 
 * Deployment instructions
   - Set the followwing as environment variables <br />
-      twitter_consumer_key=********************************
+      TWITTER_CONSUMER_KEY=********************************
       <br />
-      twitter_consumer_secret=*****************************
+      TWITTER_CONSUMER_SECRET=*****************************
       <br />
-      twitter_access_token=********************************
+      TWITTER_ACCESS_TOKEN=********************************
       <br />
-      twitter_access_token_secret=*************************
+      TWITTER_ACCESS_TOKEN_SECRET=*************************
 
   - Install Mysql Database on the server
 
@@ -32,12 +32,12 @@ Things you may want to cover:
   - Install ruby 2.3.1
   - Go to the root of project and run bundle Install
   - Make a new file named .env in root of the project and paste the following in that file <br />
-      twitter_consumer_key=********************************
+      TWITTER_CONSUMER_KEY=********************************
       <br />
-      twitter_consumer_secret=*****************************
+      TWITTER_CONSUMER_SECRET=*****************************
       <br />
-      twitter_access_token=********************************
+      TWITTER_ACCESS_TOKEN=********************************
       <br />
-      twitter_access_token_secret=*************************
+      TWITTER_ACCESS_TOKEN_SECRET=*************************
       <br />
     Replace stars with the original keys. You will have to make a app on twitter's developer account to get these keys.
