@@ -1,0 +1,22 @@
+<div class='container'>
+  <table class="table">
+    <thead>
+      <tr>
+        <th> ID </th>
+        <th> Id on Twitter </th>
+        <th> Text </th>
+        <th> Tweeted at </th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @tweets.each_with_index do |tweet, index|%>
+        <tr class="<%= get_class_for_table_row (index)%>">
+          <td> <%= tweet.id %> </td>
+          <td> <%= tweet.id_on_twitter %> </td>
+          <td> <%= tweet.tweet_text %> </td>
+          <td> <%= tweet.posted_on %> </td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,24 @@
+<div class='container'>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>SNo.</th>
+        <th>Tweet Id</th>
+        <th>Text</th>
+        <th>Tweeted at </th>
+        <th> Action </th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @tweets.each_with_index do |tweet, index|%>
+        <tr class="<%= get_class_for_table_row (index)%>">
+          <td> <%=index+1%> </td>
+          <td> <%=tweet[:id_on_twitter] %> </td>
+          <td> <%=tweet[:tweet_text] %> </td>
+          <td> <%=tweet[:posted_on] %> </td>
+          <td> <%=link_to 'Save', save_tweet_path(tweet) , class: 'btn btn-primary', method: :post%> </td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
